@@ -25,6 +25,13 @@
         "github.copilot-nightly-enable": { "*": false },
         "githubPullRequests.codingAgent.codeLens": false,
 
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+
+        "terminal.integrated.defaultProfile.linux": null,
+        "terminal.integrated.profiles.linux": {},
+        "workbench.panel.defaultLocation": "right",
+        "workbench.panel.opensMaximized": "never",
+
         "files.exclude": {
           "**/.devcontainer": true
         }
