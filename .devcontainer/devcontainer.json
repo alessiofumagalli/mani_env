@@ -27,17 +27,7 @@
         "github.copilot-nightly-enable": { "*": false },
         "githubPullRequests.codingAgent.codeLens": false,
 
-        "python.defaultInterpreterPath": "/usr/local/bin/python3",
-        "jupyter.kernels.filter": [
-          {
-            "path": "/usr/local/bin/python3",
-            "type": "pythonEnvironment"
-          }
-        ],
-
-        "terminal.integrated.tabs.enabled": false,
-        "terminal.integrated.tabs.hideCondition": "always",
-        "workbench.panel.defaultLocation": "bottom",
+        "workbench.activityBar.location": "hidden",
 
         "files.exclude": {
           "**/.devcontainer": true
