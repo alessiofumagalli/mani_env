@@ -8,6 +8,8 @@
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "forwardPorts": [8888],
 
+  "postCreateCommand": "python3 -m pip list",
+
   "customizations": {
     "vscode": {
       "extensions": [
@@ -25,12 +27,17 @@
         "github.copilot-nightly-enable": { "*": false },
         "githubPullRequests.codingAgent.codeLens": false,
 
-        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.defaultInterpreterPath": "/usr/local/bin/python3",
+        "jupyter.kernels.filter": [
+          {
+            "path": "/usr/local/bin/python3",
+            "type": "pythonEnvironment"
+          }
+        ],
 
-        "terminal.integrated.defaultProfile.linux": null,
-        "terminal.integrated.profiles.linux": {},
-        "workbench.panel.defaultLocation": "right",
-        "workbench.panel.opensMaximized": "never",
+        "terminal.integrated.tabs.enabled": false,
+        "terminal.integrated.tabs.hideCondition": "always",
+        "workbench.panel.defaultLocation": "bottom",
 
         "files.exclude": {
           "**/.devcontainer": true
